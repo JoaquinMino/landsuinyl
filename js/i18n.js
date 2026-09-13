@@ -51,7 +51,7 @@ function setLanguage(lang) {
   });
 
   const toggle = document.getElementById("langToggle");
-  if (toggle) toggle.textContent = lang === "es" ? "EN" : "ES";
+  if (toggle) toggle.textContent = lang === "es" ? "ES" : "EN";
 
   try {
     localStorage.setItem("suinyl-lang", lang);
