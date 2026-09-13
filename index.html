@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Suinyl | Nicolás Miño — DJ &amp; Producer</title>
-  <meta name="description" content="Suinyl (Nicolás Miño), DJ y productor de Buenos Aires, Argentina. Bio, producciones, sets y redes." />
+  <meta name="description" content="Suinyl (Nicolás Miño), DJ y productor de Buenos Aires, Argentina. Bio, music, DJ sets y contacto." />
 
 <!--IMPORTS (BOOTSTRAP/CSS)-->
   <link
@@ -28,19 +28,15 @@
           aria-controls="navMain" aria-expanded="false" aria-label="Abrir menú">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <button id="langToggle" class="lang-toggle" type="button" aria-label="Cambiar idioma / Switch language">EN</button>
 
         <div id="navMain" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto gap-lg-2">
-            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" data-i18n="nav.home" href="#inicio">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#sets">Sets</a></li>
-            <li class="nav-item"><a class="nav-link" href="#producciones">Producciones</a></li>
-            <li class="nav-item"><a class="nav-link" href="#redes">Redes</a></li>
-            <li class="nav-item">
-              <a class="nav-link"  href="https://soundcloud.com/suinyl" target="_blank" rel="noopener">
-                SoundCloud
-              </a>
-            </li>
+            <li class="nav-item"><a class="nav-link" data-i18n="nav.music" href="#music">Producciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dj-sets">DJ Sets</a></li>
+            <li class="nav-item"><a class="nav-link" data-i18n="nav.contact" href="#contact">Contacto</a></li>
           </ul>
         </div>
       </div>
@@ -51,22 +47,14 @@
   <main id="inicio" class="hero-split">
     <div class="hero-left">
       <div class="hero-left-inner">
-        <p class="hero-kicker-split"><span class="dot"></span>DJ &amp; PRODUCTOR — BUENOS AIRES, ARGENTINA</p>
         <h1 class="hero-name">Suinyl</h1>
-        <p class="hero-bio-short">
-          DJ y productor de Buenos Aires, Argentina. XX.
+        <p class="hero-bio-short" data-i18n="hero.bio">
+          DJ y productor de Buenos Aires, Argentina.
         </p>
         <div class="hero-buttons">
-          <a class="hero-btn" href="#sets">Mixes</a>
-          <a class="hero-btn" href="#producciones">Productions</a>
-        </div>
-        <div class="hero-socials-split">
-          <a class="social" target="_blank" rel="noopener" href="https://soundcloud.com/suinyl" aria-label="SoundCloud">
-            <i class="bi bi-soundwave"></i>
-          </a>
-          <a class="social" target="_blank" rel="noopener" href="https://www.instagram.com/suinyl_/" aria-label="Instagram">
-            <i class="bi bi-instagram"></i>
-          </a>
+          <a class="hero-btn" data-i18n="nav.music" href="#music">Producciones</a>
+          <a class="hero-btn" href="#dj-sets">DJ Sets</a>
+          <a class="hero-btn" data-i18n="hero.about" href="#bio">Sobre mi</a>
         </div>
       </div>
     </div>
@@ -81,77 +69,36 @@
     <div class="row">
       <div class="col-12 col-lg-8">
         <h2 class="mb-3">Bio</h2>
-        <p class="bio-text">
-          Suinyl es el proyecto de Nicolás Miño, DJ y productor de Buenos Aires, Argentina.
-          Hace X años que viene produciendo géneros: XX,
-          con ediciones, remixes y colaboraciones publicadas en sellos como Besarabia BA, Capódopere,
-          Schmaus, The Aviary Records y Sara Wreck Records.
+        <p class="bio-text" data-i18n="bio.text">
+          Suinyl es un DJ y productor de Buenos Aires, Argentina. Su vínculo con la música comenzó desde muy temprana edad, influenciado por su padre, músico (percusionista), y por las visitas a salas de ensayo que despertaron su curiosidad por el mundo musical. Durante su adolescencia comenzó a tocar el bajo, profundizando poco a poco su relación con la música.
+
+          Con el tiempo, su interés fue mutando hacia la música electrónica, primero desde el lugar de raver, y luego a través de la búsqueda y selección musical, lo que llevó a convertirlo en DJ para luego profundizar en la producción.
+
+          Su música ha sido editada en Curtea Veche, donde cuenta con un lanzamiento en vinilo, como también en Sobriquet, Saraw, Música Lunar, entre otros.
+
+          Su recorrido como DJ lo ha llevado a distintas provincias del país, con presentaciones en clubes y fiestas como Under Club/Blow, Bahrein, Feuer (Rosario), Wallmapu y Besarabia, compartiendo cabina con CAP, Alan Castro, entre otros.
+
+          Junto a Shaped, forman el aka SyS y a su vez, ambos, junto a Nachzz, forman Enjambre, sello discográfico y aka, utilizado como un espacio abierto a la experimentación, conviviendo con diferentes ideas, sonidos y caminos sin seguir una dirección predeterminada.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- SETS -->
-  <section id="sets" class="section container py-5">
+  <!-- MUSIC -->
+  <section id="music" class="section container py-5">
     <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
       <div>
-        <h2 class="mb-1">Mixes</h2>
+        <h2 class="mb-1" data-i18n="nav.music">Producciones</h2>
       </div>
 
-      <a class="btn btn-outline-light" target="_blank" rel="noopener" href="https://soundcloud.com/suinyl">
-        Ver más en SoundCloud
-      </a>
-    </div>
-
-    <div class="row g-4">
-      <div class="col-12 col-lg-6">
-        <div class="panel">
-          <div class="track mb-4">
-            <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
-              <span class="fw-semibold">Schmaus 015</span>
-              <a class="link-light small" target="_blank" rel="noopener"
-                href="https://soundcloud.com/schmausofficial/schmaus-015-suinyl">
-                Abrir <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-            </div>
-            <iframe
-              width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1079634394&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-            </iframe>
-          </div>
-        </div>
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="btn btn-outline-light" target="_blank" rel="noopener" href="https://soundcloud.com/suinyl/sets/music">
+          <span data-i18n="music.moreSoundcloud">Ver más en SoundCloud</span>
+        </a>
+        <a class="btn btn-outline-light" target="_blank" rel="noopener" href="https://bandcamp.com/search?q=suinyl">
+          <span data-i18n="music.moreBandcamp">Ver más en Bandcamp</span>
+        </a>
       </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="panel">
-          <div class="track mb-4">
-            <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
-              <span class="fw-semibold">BSB019: SyS</span>
-              <a class="link-light small" target="_blank" rel="noopener"
-                href="https://soundcloud.com/besarabia-ba/bsb019-sys">
-                Abrir <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-            </div>
-            <iframe
-              width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2243332298&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUCCIONES -->
-  <section id="producciones" class="section container py-5">
-    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
-      <div>
-        <h2 class="mb-1">Producciones</h2>
-      </div>
-
-      <a class="btn btn-outline-light" target="_blank" rel="noopener" href="https://soundcloud.com/suinyl">
-        Ver más en SoundCloud
-      </a>
     </div>
 
     <div class="row g-4">
@@ -162,7 +109,7 @@
               <span class="fw-semibold">Tu Actitud (Suinyl Edit)</span>
               <a class="link-light small" target="_blank" rel="noopener"
                 href="https://soundcloud.com/suinyl/ricardo-villalobos-tu-actitud-suinyl-edit">
-                Abrir <i class="bi bi-box-arrow-up-right"></i>
+                <span data-i18n="track.open">Abrir</span> <i class="bi bi-box-arrow-up-right"></i>
               </a>
             </div>
             <iframe
@@ -176,7 +123,7 @@
               <span class="fw-semibold">Jazz Dreams (Suinyl Remix)</span>
               <a class="link-light small" target="_blank" rel="noopener"
                 href="https://soundcloud.com/sarawrecords/rupert-wall-jazz-dreams-suinyl">
-                Abrir <i class="bi bi-box-arrow-up-right"></i>
+                <span data-i18n="track.open">Abrir</span> <i class="bi bi-box-arrow-up-right"></i>
               </a>
             </div>
             <iframe
@@ -193,27 +140,27 @@
             <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
               <span class="fw-semibold">Shaped &amp; Suinyl - Espejo EP [CPD071]</span>
               <a class="link-light small" target="_blank" rel="noopener"
-                href="https://soundcloud.com/capodopere/shaped-suinyl-espejo-ep">
-                Abrir <i class="bi bi-box-arrow-up-right"></i>
+                href="https://soundcloud.com/playformm/shaped-suinyl-espejo-cpd071">
+                <span data-i18n="track.open">Abrir</span> <i class="bi bi-box-arrow-up-right"></i>
               </a>
             </div>
             <iframe
               width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2176997748&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+              src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/playformm/shaped-suinyl-espejo-cpd071&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
             </iframe>
           </div>
 
           <div class="track">
             <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
-              <span class="fw-semibold">Un Recuerdo (Suinyl Remix)</span>
+              <span class="fw-semibold">Nobody Says Anything</span>
               <a class="link-light small" target="_blank" rel="noopener"
-                href="https://soundcloud.com/theaviaryrecords/nachzz-shaped-un-recuerdo-suinyl-remix-2">
-                Abrir <i class="bi bi-box-arrow-up-right"></i>
+                href="https://soundcloud.com/sarawrecords/suinyl-nobody-says-anything-3">
+                <span data-i18n="track.open">Abrir</span> <i class="bi bi-box-arrow-up-right"></i>
               </a>
             </div>
             <iframe
               width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2168113803&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+              src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/sarawrecords/suinyl-nobody-says-anything-3&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
             </iframe>
           </div>
         </div>
@@ -221,12 +168,91 @@
     </div>
   </section>
 
-  <!-- redes -->
-  <footer id="redes" class="footer py-5">
+  <!-- DJ SETS -->
+  <section id="dj-sets" class="section container py-5">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
+      <div>
+        <h2 class="mb-1">DJ Sets</h2>
+      </div>
+
+      <a class="btn btn-outline-light" target="_blank" rel="noopener" href="https://soundcloud.com/suinyl/sets/dj-sets">
+        <span data-i18n="music.moreSoundcloud">Ver más en SoundCloud</span>
+      </a>
+    </div>
+
+        <div class="row g-4">
+      <div class="col-12 col-lg-6">
+        <div class="panel">
+          <div class="track mb-4">
+            <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+              <span class="fw-semibold">Schmaus 015</span>
+              <a class="link-light small" target="_blank" rel="noopener"
+                href="https://soundcloud.com/schmausofficial/schmaus-015-suinyl">
+                <span data-i18n="track.open">Abrir</span> <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+            <iframe
+              width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1079634394&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+          </div>
+
+          <div class="track">
+            <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+              <span class="fw-semibold">Suinyl Set 1</span>
+              <a class="link-light small" target="_blank" rel="noopener"
+                href="https://soundcloud.com/minimadelicrecords/suinyl-set-1">
+                <span data-i18n="track.open">Abrir</span> <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+            <iframe
+              width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/minimadelicrecords/suinyl-set-1&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <div class="panel">
+          <div class="track mb-4">
+            <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+              <span class="fw-semibold">Deep Mvmt Podcast 294</span>
+              <a class="link-light small" target="_blank" rel="noopener"
+                href="https://soundcloud.com/deepmvmt/deep-mvmt-podcast-294-suinyl">
+                <span data-i18n="track.open">Abrir</span> <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+            <iframe
+              width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/deepmvmt/deep-mvmt-podcast-294-suinyl&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+          </div>
+
+          <div class="track">
+            <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+              <span class="fw-semibold">Yarncast 127 (Shaped &amp; Suinyl)</span>
+              <a class="link-light small" target="_blank" rel="noopener"
+                href="https://soundcloud.com/yarn-records/yarncast-127-shaped-suinyl">
+                <span data-i18n="track.open">Abrir</span> <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+            <iframe
+              width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/yarn-records/yarncast-127-shaped-suinyl&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / REDES -->
+  <footer id="contact" class="footer py-5">
     <div class="container">
       <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
         <div>
-          <h2 class="h4 mb-1">Redes</h2>
+          <h2 class="h4 mb-1" data-i18n="social.title">Redes</h2>
         </div>
       </div>
 
@@ -237,17 +263,30 @@
         <a class="social" target="_blank" rel="noopener" href="https://www.instagram.com/suinyl_/" aria-label="Instagram">
           <i class="bi bi-instagram"></i>
         </a>
+        <a class="social" target="_blank" rel="noopener" href="https://suinyl.bandcamp.com/album/suinyl-what-they-talk-ep" aria-label="Bandcamp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 18.75l7.437-13.5H24l-7.437 13.5H0z"/>
+          </svg>
+        </a>
+        <a class="social" target="_blank" rel="noopener" href="https://www.facebook.com/suinyling/" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
       </div>
+
+      <hr class="border-secondary my-4" />
+
+      <h2 class="h4 mb-2" data-i18n="nav.contact">Contacto</h2>
+      <a class="contact-email" href="mailto:suinyl@hotmail.com">
+        <i class="bi bi-envelope-fill"></i> suinyl@hotmail.com
+      </a>
 
       <hr class="border-secondary my-4" />
       <p class="text-secondary small mb-0">© <span id="year"></span> Suinyl</p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Tu JS -->
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>
